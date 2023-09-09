@@ -1,0 +1,111 @@
+
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence Immobilière IMMO</title>
+    <link rel="stylesheet" href="Assets/styles/styles.css">
+</head>
+<body>
+    <header>
+        <img src="Assets/src/img/Logo.svg" alt="Logo Immobilier" id="logo">
+        <img src="Assets/src/img/LogoQC.svg" alt="LogoQC Gouvernement" id="logoQC">
+        <nav class="header-nav">
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Logements</a></li>
+                <li><a href="#">Propriétés</a></li>
+                <li><a href="#">Accueil</a></li>
+            </ul>
+        </nav>
+        <form class="search-bar" action="recherche" method="get">
+            <input type="text" name="query" placeholder="Rechercher...">
+            <button type="submit">Recherche</button>
+        </form>
+    </header>
+    
+    <main>
+                       
+            <nav class="sidebar-nav">
+                <h2>Type de logements</h2>
+                <ul >
+                    <li><a href="#">Villas</a></li><br>
+                    <li><a href="#">Maisons</a></li><br>
+                    <li><a href="#">Duplexes</a></li><br>
+                    <li><a href="#">Triplexes</a></li><br>
+                    <li><a href="#">Appartements</a></li><br>
+                    <li><a href="#">studios</a></li><br>
+                    <li><a href="#">bureaux</a></li><br>
+                </ul>
+            </nav>
+      
+        <section class="fiche-produit">
+            <img src="Assets/src/img/apercu.jpg" alt="Image d'immeuble" width="auto">
+
+            <h1>Note des bois - 6 1/2 (4 chambres) à louer</h1>
+
+            <p>Nous avons actuellement deux appartements de type 6 1/2 à louer dans
+            l’immeuble de la Note des bois (Appartement #115 et #125). Ces
+            appartements comportent quatre chambres et les appartements sont
+            disposés sur deux étages (1er étage et sous-sol).</p>
+
+            <h4>EMPLACEMENT</h4>
+                <p>3505 Av Papineau, Québec, QC G1V 0J9</p>
+            <h4> SURFACE HABITABL</h4>
+                <p>860p²</p>
+            <h4 class="prix">PRIX  : 1891$ / mois</h4>
+            <h4>SERVICES INCLUS</h4>
+            <ul>
+                <li>Réfrigérateur  </li>
+                <li>Cuisinière</li>
+                <li>Chauffage</li>
+                <li>Eau chaude</li>
+                <li>Électricité</li>
+                <li>Internet</li>        
+           </ul>    
+            <h1>Formulaire de renseignement</h1>
+           
+                <form action="executer-form.php" method="get">
+                    <fieldset>
+                        <p>
+                            <label for="Genre">Genre</label>
+                        <select id="Genre" name="Gennre" required>
+                            <option class="option" value="">----</option>
+                            <option class="option" value="Madame">Madame</option>
+                            <option class="option" value="Monsieur">Monsieur</option>
+                            <option class="option" value="Mademoiselle">Mademoiselle</option>
+                        </select>
+                        </p>
+                        <p>
+                            <label class="required" for="Nom">Nom</label>
+                            <input id="Nom" type="text" name="name" maxlength="16" placeholder="Votre Nom*">
+                        </p>
+                        <p>
+                            <label class="required" for="prenom">Prénom</label>
+                            <input id="prenom" type="text" name="name" maxlength="16" placeholder="Votre Prénom*">
+                        </p>
+                        <p>
+                            <label class="required" for="mail">Courriel</label>
+                            <input id="mail" type="text" name="mail" maxlength="25"  placeholder="Votre Courriel*">
+                        </p>
+                        <p>
+                            <label class="required" for="Nom">Téléphone</label>
+                            <input id="phone" type="text" name="Phone" maxlength="10"  placeholder="Votre Téléphone*">
+                        </p>
+                        <p>
+                            <label class="required" for="message">Message</label>
+                            <textarea id="message" name="message" maxlength="100"  cols="30" rows="10"></textarea>
+                        </p>
+                        <p>
+                            <input class="submit" type="submit" value="Envoyer">
+                        </p>
+                        <p><small>* Champs obligatoires</small></p>
+                    </fieldset>
+                </form>       
+        </section>
+    </main>
+    <footer>Conception : Zakari Souami | IMMO Agence immobilière gouvernementale | Tous droits réservés © copyright 2023</footer>
+</body>
+</html>
